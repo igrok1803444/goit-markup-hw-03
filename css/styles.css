@@ -37,7 +37,7 @@ body {
 }
 .container {
   box-sizing: border-box;
-  min-width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -58,7 +58,7 @@ img {
 /* navigation */
 .header {
   background-color: var(--white);
-  padding: 24px 156px;
+  padding: 24px 0;
   margin: 0;
   border-bottom: 1px solid var(--cornflower);
 }
@@ -130,10 +130,10 @@ img {
   padding: 188px 0px;
 }
 .hero-container {
-  max-width: 496px;
 }
 .main-title {
-  width: 496px;
+  margin: 0 auto;
+  max-width: 496px;
   margin-bottom: 48px;
   font-weight: 700;
   color: var(--white);
