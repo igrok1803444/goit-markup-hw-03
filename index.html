@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webstudio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,45 +20,49 @@
   <body>
     <!-- Top Line -->
     <header class="header">
-      <nav>
-        <a href="./index.html" class="logo-link link"
-          >Web<span class="color-logo">Studio</span></a
-        >
-        <ul class="nav-list list">
-          <li class="nav-list-item">
-            <a href="./index.html" class="nav-link link">Studio</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="./portfolio.html" class="nav-link link">Portfolio</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="" class="nav-link link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <address class="adress-section">
-        <ul class="adress-list list">
-          <li class="adress-list-item">
-            <a href="mailto:info@devstudio.com" class="address-link link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="adress-list-item">
-            <a href="tel:+110001111111" class="address-link link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container header-container">
+        <nav class="nav">
+          <a href="./index.html" class="logo-link link"
+            >Web<span class="color-logo">Studio</span></a
+          >
+          <ul class="nav-list list">
+            <li class="nav-list-item">
+              <a href="./index.html" class="nav-link link">Studio</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="./portfolio.html" class="nav-link link">Portfolio</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="" class="nav-link link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="adress-section">
+          <ul class="adress-list list">
+            <li class="adress-list-item">
+              <a href="mailto:info@devstudio.com" class="address-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="adress-list-item">
+              <a href="tel:+110001111111" class="address-link link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
       <!-- Effective Solutions for Your Business -->
-      <section class="hero-section">
-        <h1 class="main-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="order-btn btn">Order Service</button>
+      <section class="hero-section section">
+        <div class="hero-container">
+          <h1 class="main-title">Effective Solutions for Your Business</h1>
+          <button type="button" class="order-btn btn">Order Service</button>
+        </div>
       </section>
       <!-- Our advantages -->
-      <section class="advantages-section">
+      <section class="advantages-section section">
         <h2 hidden class="main-advantage-title">Our advantages</h2>
         <ul class="advantages-list list">
           <li class="advantages-list-item">
@@ -88,7 +96,7 @@
         </ul>
       </section>
       <!-- What are we doing -->
-      <section class="occupation-section">
+      <section class="occupation-section section">
         <h2 class="occupation-title">What are we doing</h2>
         <ul class="occupation-list list">
           <li class="occupation-list-item">
@@ -121,7 +129,7 @@
         </ul>
       </section>
       <!-- Our Team -->
-      <section class="team-section">
+      <section class="team-section section">
         <h2 class="team-title">Our Team</h2>
         <ul class="team-list list">
           <li class="team-list-item">

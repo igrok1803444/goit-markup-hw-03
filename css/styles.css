@@ -19,9 +19,14 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--white);
   color: var(--slate);
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .link {
   text-decoration: none;
@@ -31,11 +36,34 @@ body {
   font-family: inherit;
   cursor: pointer;
 }
+.container {
+  box-sizing: border-box;
+  min-width: 1158px;
+  margin: 0;
+}
+.section {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 /* navigation */
 .header {
   background-color: var(--white);
+  padding: 24px 156px;
+  margin: 0;
+  border-bottom: 1px solid var(--cornflower);
+}
+.header-container {
+  display: flex;
 }
 .logo-link {
+  display: block;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-weight: 800;
@@ -43,15 +71,23 @@ body {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-right: 76px;
 }
 .color-logo {
   color: var(--navy-blue);
 }
+.nav {
+  display: flex;
+}
 .nav-list {
+  display: flex;
+  gap: 40px;
+  margin-right: 332px;
 }
 .nav-list-item {
 }
 .nav-link {
+  padding: 24px 0px;
   color: var(--navy-blue);
   line-height: 1.5;
   font-weight: 500;
@@ -67,10 +103,13 @@ body {
   font-style: normal;
 }
 .adress-list {
+  display: flex;
+  gap: 40px;
 }
 .adress-list-item {
 }
 .address-link {
+  padding: 24px 0px;
   color: var(--slate);
   font-size: 16px;
   line-height: 1.5;
@@ -81,25 +120,35 @@ body {
   color: var(--ocean);
 }
 /* hero section */
+
 .hero-section {
   background-color: var(--navy-blue);
-  text-align: center;
+  padding: 188px 472px;
+}
+.hero-container {
 }
 .main-title {
+  width: 496px;
+  margin-bottom: 48px;
   font-weight: 700;
   color: var(--white);
   font-size: 56px;
-  line-height: 107%;
+  line-height: 1.07;
+  text-align: center;
   letter-spacing: 0.02em;
 }
 .order-btn {
   background-color: var(--iris);
+  display: block;
+  margin: auto;
+  padding: 16px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
   color: var(--white);
   text-align: center;
   font-weight: 500;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   font-size: 16px;
 }
