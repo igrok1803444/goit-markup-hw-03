@@ -268,6 +268,7 @@ img {
   color: var(--cloud);
 }
 .footer-logo-link {
+  display: inline-block;
   margin-bottom: 16px;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
@@ -288,11 +289,17 @@ img {
 /* PORTFOLIO */
 
 .project-examples-section {
+  padding-top: 96px;
 }
 /* choose a category */
 .category-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
 .category-btn {
+  padding: 12px 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -300,26 +307,37 @@ img {
   letter-spacing: 0.04em;
   color: var(--iris);
   background: var(--cloud);
-  border: 1px solid --cornflower;
+  border: 1px solid var(--cornflower);
   border-radius: 4px;
 }
 .category-btn:hover,
 .category-btn:focus {
   color: var(--white);
   background-color: var(--ocean);
+  border: 1px solid transparent;
 }
 /* .examples  */
 .example-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 .example-list-item {
+  width: calc((100% - 48px) / 3);
   background-color: var(--white);
+  border: 1px solid var(--cornflower);
+  margin-bottom: 48px;
 }
 
 .example-link {
 }
 .example-photo {
 }
+.app-data-container {
+  padding: 32px 16px;
+}
 .example-desc {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
